@@ -99,6 +99,16 @@ header {
     max-width: 100px;
   }
 
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #f5f5f52e;
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+  }
+
   .nav {
     width: 85vw;
   }
