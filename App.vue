@@ -92,7 +92,7 @@ export default {
     @media (max-width: 750px) {
 
       .hero-box {
-        overflow: hidden;
+        overflow-x: hidden;
       }
 
       .direitos {
