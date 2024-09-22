@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunksystelo"]=self["webpackChunksystelo"]||[]).push([[594],{603:function(n,s,t){t.r(s),t.d(s,{default:function(){return l}});var u=t(6768);const e={class:"about"};function a(n,s){return(0,u.uX)(),(0,u.CE)("div",e,s[0]||(s[0]=[(0,u.Lk)("h1",null,"This is an about page",-1)]))}var r=t(1241);const c={},o=(0,r.A)(c,[["render",a]]);var l=o}}]);
-//# sourceMappingURL=about.bacb391d.js.map
