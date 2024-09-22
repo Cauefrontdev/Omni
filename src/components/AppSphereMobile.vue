@@ -1,5 +1,5 @@
 <template>
-  <div ref="canvasContainer" class="canvas-container"></div>
+  <div ref="canvasContainer" class="canvas-container2"></div>
 </template>
 
 <script>
@@ -22,7 +22,7 @@ methods: {
     this.$refs.canvasContainer.appendChild(renderer.domElement);
 
     // Esfera oca com wireframe
-    const geometry = new THREE.SphereGeometry(8, 32, 32);
+    const geometry = new THREE.SphereGeometry(5, 32, 32);
     const wireframe = new THREE.WireframeGeometry(geometry);
     const lineMaterial = new THREE.LineBasicMaterial({ color: 0x6A0DAD });
     const wireframeMesh = new THREE.LineSegments(wireframe, lineMaterial);
@@ -69,16 +69,17 @@ methods: {
 </script>
 
 <style>
-.canvas-container {
-height: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: rgba(0, 0, 0, 0);
+.canvas-container2 {
+  position: absolute;
+  bottom: -400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-@media (max-width: 850px) {
-  .canvas-container {
+@media (min-width: 750px) {
+  .canvas-container2 {
     display: none;
   }
 }

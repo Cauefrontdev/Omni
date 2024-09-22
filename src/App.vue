@@ -1,13 +1,12 @@
 <template>
-  <head>
-    
-  </head>
   <div class="hero-box">
     <div class="direitos"><p>© 2024 OminiString. Todos os direitos reservados. Design by OminiString.</p></div>
     <AppNavbar/>
     <div class="container">
       <AppHero/>
       <AppSphere/>
+      <AppSphereMobile/>
+      
     </div>
   </div>
 </template>
@@ -15,14 +14,16 @@
 <script>
 import AppNavbar from './components/AppNavbar.vue';
 import AppHero from './components/AppHero.vue';
-import AppSphere from './components/AppSphere.vue'; // Importando a esfera
+import AppSphere from './components/AppSphere.vue'; 
+import AppSphereMobile from './components/AppSphereMobile.vue'; 
 
 export default {
   name: 'App',
   components: {
     AppNavbar,
     AppHero,
-    AppSphere
+    AppSphere,
+    AppSphereMobile
   }
 }
 </script>
@@ -86,6 +87,19 @@ export default {
       position: absolute;
       right: -100px;
       transform: rotate(90deg);
+    }
+
+    @media (max-width: 750px) {
+
+      .direitos {
+        display: none;
+      }
+      .container {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
       
