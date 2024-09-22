@@ -1,2 +1,2 @@
 # Omni
-Site em Vue.js
+Site Omnistring
